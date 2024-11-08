@@ -1,0 +1,1364 @@
+{
+	"info": {
+		"_postman_id": "c909c0fb-2b00-464d-8c26-17e9cf7e609c",
+		"name": "Recruitment Solutions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25192585"
+	},
+	"item": [
+		{
+			"name": "Skills",
+			"item": [
+				{
+					"name": "Save Skill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Python\",\r\n    \"keywords\": [\"Django\", \"Flask\", \"Data Science\", \"Machine Learning\"],\r\n    \"description\": \"Python is a high-level, general-purpose programming language. It is used in a variety of fields such as web development, data science, artificial intelligence, and more. Popular frameworks for Python include Django and Flask.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/skill/saveskill",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"skill",
+								"saveskill"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch Skill By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/skill/fetchskill/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"skill",
+								"fetchskill",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch All Skills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/skill/fetchallskills",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"skill",
+								"fetchallskills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Skill",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"name\": \"Python\",\r\n    \"keywords\": [\"DJango\", \"Flask\", \"pip\", \"Conditional Statements\", \"AI\", \"ML\"],\r\n    \"description\" : \"Python is a very popular programming language with a lot of frameworks. Being mainly used in AI & ML because of its extensive frameworks and libraries.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/skill/updateskill/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"skill",
+								"updateskill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Skill By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/skill/deleteskill/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"skill",
+								"deleteskill",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Save Employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"Alex Kim\",\r\n\"email\": \"alexkim@example.com\",\r\n\"phone\": \"111-111-1111\",\r\n\"qualification\": \"Bachelor's degree in Business Administration\",\r\n\"experience\": \"3 years\",\r\n\"joiningDate\": \"2022-03-15\",\r\n\"leavingDate\": null,\r\n\"location\": \"Chicago\",\r\n\"workLocation\": \"Office\",\r\n\"workType\": \"Full-time\",\r\n\"previousCompanyCTC\": \"$80,000\",\r\n\"offeredCTC\": \"$100,000\",\r\n// \"designation\": {\r\n// \"id\": 3\r\n// },\r\n\"referredBy\": \"Mark Johnson\",\r\n\"comments\": \"Promising candidate!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/employee/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch Employee By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/employee/fetchEmployee/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employee",
+								"fetchEmployee",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch All Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/employee/fetchAllEmployees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employee",
+								"fetchAllEmployees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Employee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"Alex Kim\",\r\n\"email\": \"alexkim@example.com\",\r\n\"phone\": \"111-111-1111\",\r\n\"qualification\": \"Bachelor's degree in Business Administration\",\r\n\"experience\": \"3 years\",\r\n\"joiningDate\": \"2022-03-15\",\r\n\"leavingDate\": \"2023-03-20\",\r\n\"location\": \"Chicago\",\r\n\"workLocation\": \"Office\",\r\n\"workType\": \"Full-time\",\r\n\"previousCompanyCTC\": \"$80,000\",\r\n\"offeredCTC\": \"$100,000\",\r\n\"designation\": {\r\n\"id\": 3\r\n},\r\n\"referredBy\": null,\r\n\"comments\": \"Promising candidate!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/employee/updateEmployee/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employee",
+								"updateEmployee",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Requirements",
+			"item": [
+				{
+					"name": "Save Requirements",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"frontend Developer - Angular/React\",\r\n    \"client\": {\r\n        \"id\": 1\r\n    },\r\n    \"spocId\": {\r\n        \"id\": 4\r\n    },\r\n    \"requirementDate\": \"2024-05-11\",\r\n    \"spocAccountId\": {\r\n        \"id\": 1\r\n    },\r\n    \"skill\": {\r\n        \"id\": 1\r\n    },\r\n    \"keywords\": \"software development, database management, backend, Java, Spring\",\r\n    \"experience\": \"5-6 years\",\r\n    \"relevantExperience\": \"4 years\",\r\n    \"workType\": \"Full-time, Contract\",\r\n    \"city\": {\r\n        \"id\": 2\r\n    },\r\n    \"jobDescription\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n    \"comments\": \"Additional comments or notes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/requirements/saveRequirements",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"requirements",
+								"saveRequirements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch All Requirements",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/requirements/fetchAllRequirements",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"requirements",
+								"fetchAllRequirements"
+							]
+						},
+						"description": "Fetches all the requirements from the backend."
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch Requirement By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/requirements/fetchRequirements/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"requirements",
+								"fetchRequirements",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ManyToMany with jsonBack and managed rerference",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/requirements/fetchRequirements/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"requirements",
+										"fetchRequirements",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 14 Apr 2023 08:20:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \".NET - developer\",\n    \"client\": {\n        \"id\": 1,\n        \"name\": \"Shivam\",\n        \"description\": \"abc\",\n        \"city\": {\n            \"id\": 1,\n            \"name\": \"Bangalore\",\n            \"description\": \"Techcnological capital of Karntaka\",\n            \"stateId\": {\n                \"id\": 3,\n                \"name\": \"karnataka\",\n                \"description\": null,\n                \"countryId\": {\n                    \"id\": 1,\n                    \"name\": \"India\",\n                    \"description\": \"Land of culture\"\n                }\n            }\n        },\n        \"sourceFrom\": \"Office\",\n        \"registrationDate\": \"2005-11-12\",\n        \"clientStatus\": {\n            \"id\": 2,\n            \"name\": \"Not Active\",\n            \"description\": \"Client is not active\"\n        }\n    },\n    \"spocId\": [\n        {\n            \"id\": 4,\n            \"requirementType\": \"Temp\",\n            \"name\": \"John\",\n            \"email\": \"john@gmail.com\",\n            \"phone\": \"77395331155\",\n            \"alternatePhone\": \"8484927937\",\n            \"designationId\": {\n                \"id\": 3,\n                \"name\": \"SDE3\",\n                \"description\": \"Software Development Engineer\",\n                \"userRole\": []\n            },\n            \"cityId\": {\n                \"id\": 3,\n                \"name\": \"Munar\",\n                \"description\": \"beautiful tea estates and nature\",\n                \"stateId\": {\n                    \"id\": 4,\n                    \"name\": \"kerala\",\n                    \"description\": null,\n                    \"countryId\": {\n                        \"id\": 1,\n                        \"name\": \"India\",\n                        \"description\": \"Land of culture\"\n                    }\n                }\n            },\n            \"referedBy\": \"Nobody\",\n            \"comments\": \"Good Candidate\",\n            \"clientiD\": []\n        },\n        {\n            \"id\": 3,\n            \"requirementType\": \"Temp\",\n            \"name\": \"John\",\n            \"email\": \"john@gmail.com\",\n            \"phone\": \"77395331155\",\n            \"alternatePhone\": \"8484927937\",\n            \"designationId\": {\n                \"id\": 3,\n                \"name\": \"SDE3\",\n                \"description\": \"Software Development Engineer\",\n                \"userRole\": []\n            },\n            \"cityId\": {\n                \"id\": 3,\n                \"name\": \"Munar\",\n                \"description\": \"beautiful tea estates and nature\",\n                \"stateId\": {\n                    \"id\": 4,\n                    \"name\": \"kerala\",\n                    \"description\": null,\n                    \"countryId\": {\n                        \"id\": 1,\n                        \"name\": \"India\",\n                        \"description\": \"Land of culture\"\n                    }\n                }\n            },\n            \"referedBy\": \"Nobody\",\n            \"comments\": \"Good Candidate\",\n            \"clientiD\": []\n        }\n    ],\n    \"requirementDate\": \"2023-04-11T18:30:00.000+00:00\",\n    \"spocAccountId\": {\n        \"id\": 1,\n        \"name\": \"wbf;jwrvjwrv\",\n        \"spocRegistration\": {\n            \"id\": 1,\n            \"requirementType\": \"frogen\",\n            \"name\": \"Bruce\",\n            \"email\": \"bruce@gmail.com\",\n            \"phone\": \"7755331155\",\n            \"alternatePhone\": \"9955112233\",\n            \"designationId\": {\n                \"id\": 2,\n                \"name\": \"Designation Name\",\n                \"description\": \"Any Description\",\n                \"userRole\": []\n            },\n            \"cityId\": {\n                \"id\": 1,\n                \"name\": \"Bangalore\",\n                \"description\": \"Techcnological capital of Karntaka\",\n                \"stateId\": {\n                    \"id\": 3,\n                    \"name\": \"karnataka\",\n                    \"description\": null,\n                    \"countryId\": {\n                        \"id\": 1,\n                        \"name\": \"India\",\n                        \"description\": \"Land of culture\"\n                    }\n                }\n            },\n            \"referedBy\": \"Hulk\",\n            \"comments\": \"SuperHero\",\n            \"clientiD\": [\n                {\n                    \"id\": 2,\n                    \"name\": \"Shashank\",\n                    \"description\": \"abc\",\n                    \"city\": {\n                        \"id\": 2,\n                        \"name\": \"Mysore\",\n                        \"description\": \"Mysore palace\",\n                        \"stateId\": {\n                            \"id\": 3,\n                            \"name\": \"karnataka\",\n                            \"description\": null,\n                            \"countryId\": {\n                                \"id\": 1,\n                                \"name\": \"India\",\n                                \"description\": \"Land of culture\"\n                            }\n                        }\n                    },\n                    \"sourceFrom\": \"Office\",\n                    \"registrationDate\": \"2005-11-12\",\n                    \"clientStatus\": {\n                        \"id\": 3,\n                        \"name\": \"Dormant\",\n                        \"description\": \"Client is dormant\"\n                    }\n                }\n            ]\n        }\n    },\n    \"skill\": {\n        \"id\": 1,\n        \"name\": \"Python\",\n        \"keywordsString\": \"[DJango, Flask, pip, Conditional Statements, AI, ML, MongoDB]\",\n        \"description\": \"Python is a very popular programming language with a lot of frameworks. Being mainly used in AI & ML because of its extensive frameworks and libraries.\",\n        \"keywords\": [\n            \"DJango\",\n            \"Flask\",\n            \"pip\",\n            \"Conditional Statements\",\n            \"AI\",\n            \"ML\",\n            \"MongoDB\"\n        ]\n    },\n    \"keywords\": \"software development, database management\",\n    \"experience\": \"3-5 years\",\n    \"relevantExperience\": \"2 years\",\n    \"workType\": \"Full-time\",\n    \"city\": {\n        \"id\": 3,\n        \"name\": \"Munar\",\n        \"description\": \"beautiful tea estates and nature\",\n        \"stateId\": {\n            \"id\": 4,\n            \"name\": \"kerala\",\n            \"description\": null,\n            \"countryId\": {\n                \"id\": 1,\n                \"name\": \"India\",\n                \"description\": \"Land of culture\"\n            }\n        }\n    },\n    \"jobDescription\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\n    \"comments\": \"Additional comments or notes\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Requirement By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Backend Developer - Java\",\r\n    \"client\": {\r\n        \"id\": 1\r\n    },\r\n    \"spocId\": {\r\n        \"id\": 4\r\n    },\r\n    \"requirementDate\": \"2023-05-11\",\r\n    \"spocAccountId\": {\r\n        \"id\": 1\r\n    },\r\n    \"skill\": {\r\n        \"id\": 1\r\n    },\r\n    \"keywords\": \"software development, database management, backend, Java, Spring\",\r\n    \"experience\": \"5-6 years\",\r\n    \"relevantExperience\": \"4 years\",\r\n    \"workType\": \"Full-time, Contract\",\r\n    \"city\": {\r\n        \"id\": 2\r\n    },\r\n    \"jobDescription\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n    \"comments\": \"Role needs to be filled ASAP\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/requirements/updateRequirements/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"requirements",
+								"updateRequirements",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Requirement By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/requirements/deleteRequirement/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"requirements",
+								"deleteRequirement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Spoc Registartion",
+			"item": [
+				{
+					"name": "Save Spoc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requirementType\" :\"frogen\",\r\n    \"name\" :\"Bruce\",\r\n    \"email\" :\"bruce@gmail.com\",\r\n    \"phone\" :\"7755331155\",\r\n    \"alternatePhone\" :\"9955112233\",\r\n    \"clientId\" : { \"id\" : 1 },\r\n    \"designationId\" :  {\"id\":32 },\r\n    \"cityId\" :  {\"id\":1 },\r\n    \"referedBy\" :\"Hulk\",\r\n    \"comments\" :\"SuperHero\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/spoc/registration/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"spoc",
+								"registration",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch All SPOCs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/spoc/registration/spoc/findall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"spoc",
+								"registration",
+								"spoc",
+								"findall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch SPOC by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requirementType\" :\"contract\",\r\n    \"name\" :\"fury\",\r\n    \"email\" :\"furry@gmail.com\",\r\n    \"phone\" :\"9638527410\",\r\n    \"alternatePhone\" :\"7410852963\",\r\n    \"clientId\" : { \"id\" : 1 },\r\n    \"designationId\" :  {\"id\":1 },\r\n    \"cityId\" :  {\"id\":1 },\r\n    \"referedBy\" :\"none\",\r\n    \"comments\" :\"cop\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/spoc/registration/spoc/findbyid/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"spoc",
+								"registration",
+								"spoc",
+								"findbyid",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete SPOC by Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/spoc/registration/spoc/delete/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"spoc",
+								"registration",
+								"spoc",
+								"delete",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/spoc/registration/spoc/delete/7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/spoc/registration/spoc/findbycityid/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"spoc",
+								"registration",
+								"spoc",
+								"findbycityid",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "country",
+			"item": [
+				{
+					"name": "savecounutry",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"India\",\r\n    \"description\" : \"Land of culture\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/v1/country/savecountry",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"country",
+								"savecountry"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "state",
+			"item": [
+				{
+					"name": "Save state",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Haryana\",\r\n    \"desscription\" : \"rice exporter\",\r\n    \"countryId\" : {\r\n                    \"id\" : 1\r\n                  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/v1/state/savestate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"state",
+								"savestate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch All States",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/v1/state/fetchallstate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"state",
+								"fetchallstate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "city",
+			"item": [
+				{
+					"name": "savecity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Haryana\",\r\n    \"desscription\" : \"rice exporter\",\r\n    \"stateId\" : {\r\n                    \"id\" : 1\r\n                  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/v1/state/savecity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"state",
+								"savecity"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Roles",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\":\"Keep role name here\",\r\n    \"description\":\"Provide some description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/v1/userroles/saveuserrole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"userroles",
+								"saveuserrole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/v1/userroles/fetchalluserroles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"userroles",
+								"fetchalluserroles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/v1/userroles/fetchuserrole/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"userroles",
+								"fetchuserrole",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Changes by PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\":\"Role Name to be changed\",\r\n    \"description\":\"Description to be changed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/v1/userroles/updateuserrole/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"userroles",
+								"updateuserrole",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Chnages by Patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\":\"Role Name to be changed\",\r\n    \"description\":\"Description to be changed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/v1/userroles/updateuserrole/{id}/{name}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"userroles",
+								"updateuserrole",
+								"{id}",
+								"{name}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by ID",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\":\"Role Name to be changed\",\r\n    \"description\":\"Description to be changed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/v1/userroles/updateuserrole/deleteuserrole/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"userroles",
+								"updateuserrole",
+								"deleteuserrole",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client Worktype",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"worktype\":\"Keep role name here\",\r\n    \"resourceCount\":10,\r\n    \"estimatedTurnover\":200000.36,\r\n    \"billingCycle\":\"every month\",\r\n    \"comments\":\"anything\",\r\n    \"clinetRegistration\":{\"id\" : 1}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/v1/clientworktype/saveclientworktype",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"clientworktype",
+								"saveclientworktype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/v1/clientworktype/fetchallclientworktype",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"clientworktype",
+								"fetchallclientworktype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/v1/clientworktype/fetchclientworktype/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"clientworktype",
+								"fetchclientworktype",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Changes by PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"worktype\":\"Keep role name here\",\r\n    \"resourceCount\":10,\r\n    \"estimatedTurnover\":200000.36,\r\n    \"billingCycle\":\"every month\",\r\n    \"comments\":\"anything\",\r\n    \"clinetRegistration\":{\"id\" : 1}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/v1/clientworktype/updateclientworktype/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"clientworktype",
+								"updateclientworktype",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Chnages by Patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\":\"Role Name to be changed\",\r\n    \"description\":\"Description to be changed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/v1/clientworktype/updateclientworktype/{id}/{name}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"clientworktype",
+								"updateclientworktype",
+								"{id}",
+								"{name}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\":\"Role Name to be changed\",\r\n    \"description\":\"Description to be changed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/v1/clientworktype/deleteclientworktype/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"v1",
+								"clientworktype",
+								"deleteclientworktype",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Designation",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Keep name here1\",\r\n    \"description\":\"Provide some description\",\r\n    \"userRole\":  {\"id\" : 1}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/designation/savedesignation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"designation",
+								"savedesignation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/designation/fetchalldesignations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"designation",
+								"fetchalldesignations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/designation/fetchdesignation/28",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"designation",
+								"fetchdesignation",
+								"28"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Changes by PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\":\"Role Name to be changed\",\r\n    \"description\":\"Description to be changed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/designation/updatedesignation/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"designation",
+								"updatedesignation",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Chnages by Patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\":\"Role Name to be changed\",\r\n    \"description\":\"Description to be changed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/designation/updatedesignation/{id}/{name}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"designation",
+								"updatedesignation",
+								"{id}",
+								"{name}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\":\"Role Name to be changed\",\r\n    \"description\":\"Description to be changed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/designation/deletedesignation/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"designation",
+								"deletedesignation",
+								"17"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "clientregistration",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Shivam\",\r\n    \"description\" : \"abc\",\r\n    \"city\" : {\r\n                \"id\" : 6\r\n             },\r\n    \"sourceFrom\" : \"Office\",\r\n    \"registrationDate\" : \"2005-11-12\",\r\n    \"clientStatus\" : {\r\n                        \"id\" : 4\r\n                     }        \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/clientregistration/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"clientregistration",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "clientassignment",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userRoles\" : {\r\n                    \"id\" : 4\r\n                 } ,\r\n\t\"employee\" : {\r\n                    \"id\" : 3\r\n                },\r\n\t\"clientRegistration\" : \r\n                                {\r\n                                    \"id\" : 2\r\n                                },\r\n\t\"spocRegistration\" : {\r\n                            \"id\" : 1\r\n                        },\r\n\t\"city\" :  {\r\n                \"id\" : 1\r\n              }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/clientassignment/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"clientassignment",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "clientastatus",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Status 1\",\r\n    \"description\":\"Status 1 description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/clientstatus/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"clientstatus",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
